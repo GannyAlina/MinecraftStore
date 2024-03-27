@@ -1,0 +1,162 @@
+.showCase{
+    display: flex;
+    flex-direction: column;
+}
+.showCase__nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+.showCase__nav a{
+    flex-grow: 1;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    background: skyblue;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.showCase__nav a:hover{
+    background-color: rgb(62, 165, 205);
+}
+.showCase__content{
+    display: flex;
+}
+.showCase__secondNav{
+    width: 400px;
+    background-color:rgb(98, 190, 226);
+    display: flex;
+    flex-direction: column;
+}
+.showCase__secondNav a{
+    padding: 40px 7px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+.showCase__secondNav a:hover{
+    background-color: rgb(116, 220, 240);
+}
+.showCaseCards{
+    /* flex-grow: 2; */
+    background-color: rgb(204, 234, 245);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    padding: 35px;
+    gap: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-y: scroll;
+    height: 588px;
+}
+.card{
+    display: flex;
+    width: calc(25% - 60px);
+    min-width: 230px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: paleturquoise  ;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card img, h3{
+    width: 100%;
+
+}
+.card-btn{
+    background: none;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.card-priese{
+    margin-right: 15px;
+    color: rgb(48, 163, 73);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.active{
+    background-color: rgb(66, 255, 119) !important;
+}
+.text-1{
+    color: rgb(120, 0, 248);
+}
+
+.Poppap{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.578);
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 2px 10px;
+    display: none; 
+    
+}
+
+.PoppapShow{
+    display: block;
+    
+}
+.Poppapinput{
+    padding: 5px 8px;
+
+}
+
+.PoppapData{
+    max-width: 600px;
+    padding: 20px 15px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+
+}
+
+.PoppapClose{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border: none;   
+    background-color: rgba(238, 47, 47, 0.655);
+}
+
+.PoppapButton{
+    border: none;
+    background-color: white;
+    height: 30px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(232, 209, 169);
+    border-radius: 5px;
+    padding: 6px 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.PoppapPrice{
+    color: rgb(42, 91, 42);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 800px) {
+    .showCase__secondNav {
+        width: 230px;
+    }
+}
+
+@media (max-width: 550px) {
+    .showCase__nav {
+        overflow-x: scroll;
+    }
+    .showCase__gametype {
+        min-width: 150px;
+    }
+}

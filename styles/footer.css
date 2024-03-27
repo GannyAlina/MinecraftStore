@@ -1,0 +1,70 @@
+
+
+
+
+
+
+h4{
+    text-align: center;
+    color: rgb(175, 236, 255);
+    font-size: 36px;
+    margin-bottom: 40px;
+    }
+    footer{
+     background: rgb(45, 145, 195);   
+     color:white;
+     padding-top: 35px;
+     padding-bottom: 30px;
+    margin-top: 50px;
+    }
+    .social{
+        display: flex;
+        justify-content:space-evenly;
+        color: rgb(56, 56, 227);
+    }
+    .social_link{
+        color: rgb(71, 209, 204);
+        width: 200px;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.5s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .social_link:hover{
+        color: cyan;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+    }
+    .card:hover{
+    transform:scale(1.1);
+    }
+    .telegram_icon::before{
+        content:"";
+        background: url(imgs/7549912_telegram_chat_communication_message_talk_icon.png)center center/contain no-repeat;
+        width: 24px;
+        display: block;
+        height: 24px;
+        object-fit: contain;
+        margin-right: 5px;
+    }
+    .vk_icon::before{
+        content:"";
+        background: url(imgs/8726565_vk_icon.png)center center/contain no-repeat;
+        width: 24px;
+        display: block;
+        height: 24px;
+        object-fit: contain;
+        margin-right: 5px;
+    }
+    .youtube_icon::before{
+        content:"";
+        background: url(imgs/3225180_app_logo_media_popular_social_icon.png)center center/contain no-repeat;
+        width: 24px;
+        display: block;
+        height: 24px;
+        object-fit: contain;
+        margin-right: 5px;
+    }
